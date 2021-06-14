@@ -1,0 +1,253 @@
+/*
+   Source code of the TCET Linux Website
+
+     SPDX-FileCopyrightText: 2021 DemonKiller <linux@tcetmumbai.in>
+     SPDX-License-Identifier: MIT
+
+   Redistribution and use in source and binary forms, with or without
+   modification, are permitted provided that the following conditions
+   are met:
+
+     1. Redistributions of source code must retain the above copyright
+        notice, this list of conditions and the following disclaimer.
+     2. Redistributions in binary form must reproduce the above copyright
+        notice, this list of conditions and the following disclaimer in the
+        documentation and/or other materials provided with the distribution.
+
+   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+   POSSIBILITY OF SUCH DAMAGE.
+
+*/
+:root{
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+}
+
+#footer .footer-top .footer-info h3 {
+    border: none;
+    padding: 2px 0;
+    line-height: 1.2;
+}
+
+#footer .footer-top .footer-info {
+    text-align: center;
+}
+
+#footer .footer-top .social-links a {
+    font-size: 32px;
+    width: 64px;
+    height: 64px;
+    padding: 16px 0;
+    margin: 5px;
+}
+
+#download {
+    background-image: url(img/experience.png);
+}
+
+.services {
+    background: #000;
+    background-size: cover;
+    padding: 60px 0 40px 0;
+}
+
+.services .box {
+    margin-bottom: 30px;
+}
+
+.services .icon {
+    float: left;
+}
+
+.services .icon i {
+    color: orange;
+    font-size: 36px;
+    line-height: 1;
+    transition: 0.5s;
+}
+
+.services .title {
+    margin-left: 60px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.services .title a {
+    color: #fff
+}
+
+.services .box:hover .title a {
+    color: orange;
+}
+
+.services .description {
+    font-size: 14px;
+    margin-left: 60px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#manual .side-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 10px 10px;
+}
+#manual .post-content{
+    margin-bottom: 1rem;
+    width: 100%;
+    border-bottom: var(--sky);
+}
+#manual .side-content .post-content > .post-image, .post-title{
+    padding: 1rem 2rem;
+    position: relative;
+    
+}
+#manual .side-content .post-content > .post-image .post-info{
+    background: var(--sky);
+    padding: 1rem;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3rem;
+}
+#manual .side-content .post-content > .post-image > div{
+    overflow: hidden;
+}
+#manual .side-content .post-content > .post-image .img{
+    width: 100%;
+    transition: all 1s ease;
+}
+#manual .side-content .post-content > .post-image .img:hover{
+    transform:scale(1.1);
+}
+#manual .side-content .post-content > .post-image .post-info span{
+    margin: 0 .5rem;
+}
+
+#manual .post-content .post-title a{
+    font-family: var(--Anton);
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+#manual .post-content .post-title p{
+    color: black;
+}
+.side-content .post-content .post-title .post-btn{
+    border-radius: 5px;
+    padding: .7rem 1.5rem;
+    background: var(--sky);
+}
+section .side{
+    margin: 0 10px;
+    padding: 10px 10px;
+    overflow-wrap: normal;
+    
+}
+
+section .side .req{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    color: black;
+}
+ section .side .details{
+     color: black;
+     margin-top: 2rem;
+ }
+
+section .side h1{
+    text-align: center;
+}
+section .side .lst ul{
+    /* display: flex;
+    flex-direction: column; */
+    font-size: 1rem;
+    
+}
+
+section .side .lst ul .lstimg{
+    width: 50%;
+    margin-left: 45%;
+    transform: translateX(-50%);
+    background: black;
+    border: 2px solid black;
+}
+.side .lst ul li{
+     margin-bottom: 10px;
+}
+.side .lst .lstimg img{
+
+    width: 100%;
+    
+}
+
+@media (max-width: 768px) {
+    #manual .side-content{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+    
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    #skills .progress .skill {
+        margin: 0 0 0 20px;
+    }
+    #skills .progress .skill .val {
+        margin: 0 20px 0 0;
+    }
+}
+
+@media (min-height: 621px) {
+    .photo,
+    #intro h2,
+    #intro p {
+        margin-bottom: 30px;
+    }
+    .photo {
+        width: 200px;
+    }
+}
+
+@media (max-height: 620px) {
+    .photo,
+    #intro h2,
+    #intro p {
+        margin-bottom: 20px;
+    }
+    .photo {
+        width: 180px;
+    }
+}
+
+@media (max-height: 580px) {
+    .photo,
+    #intro h2,
+    #intro p {
+        margin-bottom: 15px;
+    }
+    .photo {
+        width: 150px;
+    }
+}
